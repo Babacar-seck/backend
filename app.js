@@ -10,7 +10,7 @@ const User = require('./models/User');
 const app = express();
 
 
-const password = 'IkyuSCn72AuoqPXm';
+const password = '';
 mongoose.connect(`mongodb+srv://babacarseck:${password}@cluster0.1brou.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`,
   { useNewUrlParser: true,
     useUnifiedTopology: true })

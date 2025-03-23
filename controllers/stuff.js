@@ -6,7 +6,7 @@ exports.createThing = (req, res, next) => {
       ...req.body
     });
     thing.save()
-    .then(() => res.status(201).json({message : 'Posy saved successfully!'}))
+    .then(() => res.status(201).json({message : 'Post saved successfully!'}))
     .catch(error => res.status(400).json({error}));
 }
 
