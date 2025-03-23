@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uniqueValidator = reuire('mongoose-unique-validator');
+const uniqueValidator = require('mongoose-unique-validator');
 
 
 const userSchema = mongoose.Schema({

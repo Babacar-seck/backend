@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const stuffRoutes = require('./routes/stuff');
@@ -25,8 +26,8 @@ app.use((req, res, next) => {
     next();
 });
   
-app.use(express.json());
-// app.use(bodyParser.json());
+//app.use(express.json());
+app.use(bodyParser.json());
 
 app.use('/api/stuff', stuffRoutes);
 app.use('/api/auth', userRoutes)
